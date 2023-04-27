@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style/style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="content">
+                <!--Foto-->
+            </div>
+            <div class="forms">
+                <form autocomplete="on" action="" method="post">
+                    <p>
+                        <label for="xusername"><span class="material-symbols-outlined">person</span> Nome Completo</label><br>
+                        <input type="text" name="username" id="xusername" required size="30">
+                    </p>
+                    <p>
+                        <label for="xdata"><span class="material-symbols-outlined">calendar_month</span> Data de Nascimento</label><br>
+                        <input type="date" name="data" id="xdata" required>
+                    </p>
+                    <p>
+                        <label for="xtel"><span class="material-symbols-outlined"> Call </span> Número de Telefone</label><br>
+                        <input type="tel" name="tel" id="xtel" required minlength="15" maxlength="16" placeholder="(DD) 99999-9999">
+                    </p>
+                    <p>
+                        <label for="xemail"><span class="material-symbols-outlined"> Mail</span> Email</label><br>
+                        <input type="email" name="email" id="xemail" required size="30" autocomplete="email" placeholder="Preencha com o seu email">
+                    </p>
+                    <p>
+                        <label for="xsenha"><span class="material-symbols-outlined"> Key</span> Senha</label><br>
+                        <input type="password" name="senha" id="xsenha" required size="30" autocomplete="current-password" placeholder="Preencha com sua senha"
+                        >
+                    </p>
+                    <p>
+                        <input type="submit" value="Cadastrar">
+                        <input type="reset" value="Limpar">
+                    </p>
+                    <textarea name="" id="xcomment" cols="25" rows="10">
+                    </textarea>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
