@@ -11,41 +11,38 @@
 <body>
     <main>
         <div class="container">
-            <div class="content">
-                <!--Foto-->
-            </div>
-            <div class="forms">
-                <form autocomplete="on" action="" method="post">
-                    <p>
-                        <label for="xusername"><span class="material-symbols-outlined">person</span> Nome Completo</label><br>
-                        <input type="text" name="username" id="xusername" required size="30">
-                    </p>
-                    <p>
-                        <label for="xdata"><span class="material-symbols-outlined">calendar_month</span> Data de Nascimento</label><br>
-                        <input type="date" name="data" id="xdata" required>
-                    </p>
-                    <p>
-                        <label for="xtel"><span class="material-symbols-outlined"> Call </span> Número de Telefone</label><br>
-                        <input type="tel" name="tel" id="xtel" required minlength="15" maxlength="16" placeholder="(DD) 99999-9999">
-                    </p>
-                    <p>
-                        <label for="xemail"><span class="material-symbols-outlined"> Mail</span> Email</label><br>
-                        <input type="email" name="email" id="xemail" required size="30" autocomplete="email" placeholder="Preencha com o seu email">
-                    </p>
-                    <p>
-                        <label for="xsenha"><span class="material-symbols-outlined"> Key</span> Senha</label><br>
-                        <input type="password" name="senha" id="xsenha" required size="30" autocomplete="current-password" placeholder="Preencha com sua senha"
-                        >
-                    </p>
-                    <p>
-                        <input type="submit" value="Cadastrar">
-                        <input type="reset" value="Limpar">
-                    </p>
-                    <textarea name="" id="xcomment" cols="25" rows="10">
-                    </textarea>
-                </form>
-            </div>
+            <form autocomplete="on" action="" method="post">
+                <p>
+                    <label for="xusername">Nome Completo</label><br>
+                    <input type="text" name="username" id="xusername"  size="30" placeholder="Nome">
+                </p>
+                <p>
+                    <label for="xdata"><span cla></span>Data de Nascimento</label><br>
+                    <input type="date" name="data" id="xdata" >
+                </p>
+                <p>
+                    <label for="xtel">Número de Telefone</label><br>
+                    <input type="tel" name="tel" id="xtel"  minlength="15" maxlength="16" placeholder="(DD) 99999-9999">
+                </p>
+                <p>
+                    <label for="xemail">Email</label><br>
+                    <input type="email" name="email" id="xemail"  size="30" autocomplete="email" placeholder="seu@gmail.com">
+                </p>
+                <p>
+                    <label for="xsenha">Senha</label><br>
+                    <input type="password" name="senha" id="xsenha"  size="30" autocomplete="current-password" placeholder="Preencha com sua senha"
+                    >
+                </p>
+                <textarea name="" id="xcomment" cols="25" rows="10" placeholder="Deixe um comentário">
+                </textarea>
+                <p class="buttons">
+                    <input type="button" value="Cadastrar" onclick="login()">
+                    <input type="reset" value="Limpar">
+                </p>
+                
+            </form>
         </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
