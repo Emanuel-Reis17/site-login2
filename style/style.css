@@ -21,6 +21,7 @@
     box-sizing: border-box;
 }
 
+
 main {
     display: flex;
     justify-content: center;
@@ -90,6 +91,18 @@ textarea {
 
 #result {
     background-color: var(--color00);
+    font-family: monospace;
     padding: 10px;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 0px;
+        height: 100%;
+    }
 }
