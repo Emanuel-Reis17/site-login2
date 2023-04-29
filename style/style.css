@@ -25,6 +25,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0px 10px;
     background-color: var(--color00);
     color: white;
     width: 100%;
@@ -51,6 +52,7 @@ p input {
     height: 30px;
     border: none;
     border-radius: 3px;
+    outline: none;
 }
 
 p input:hover {
@@ -59,7 +61,6 @@ p input:hover {
 }
 
 textarea {
-    text-indent: 1px;
     background-color: var(--color00);
     color: white;
     width: 100%;
@@ -87,10 +88,8 @@ textarea {
     transition: 0.4s;
 }
 
-.buttons input[type=reset]:hover {
-    background-color:var(--color2);
-    color: white;
-    font-weight: bold;
-    border: none;
-    transition: 0.7s;
+#result {
+    background-color: var(--color00);
+    padding: 10px;
+    border-radius: 10px;
 }
